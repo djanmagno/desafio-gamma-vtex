@@ -1,0 +1,135 @@
+// store/blocks/product.jsonc
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#imagem",
+      "flex-layout.row#preco",  
+      "flex-layout.row#tabs"
+    ]
+  },
+  "flex-layout.row#imagem": {
+    "children": ["flex-layout.row#imagemleft"],
+    "props": {
+      "bookclass": "imagem"
+    }
+  },
+  "flex-layout.row#imagemleft": {
+    "children":["flex-layout.col#imagemleft"]
+  },
+  "flex-layout.col#imagemleft": {
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "position": "right",
+      "maxHeight": 400,
+      "zoomMode": "disabled"
+    }
+  },
+
+  "flex-layout.row#preco": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": ["product-name", "product-price"]
+  },
+  "product-price": {
+    "props": {
+      "showSavings": true,
+      "showListPrice": true
+    }
+  },
+
+  "flex-layout.row#tabs": {
+    "children": ["tab-layout#products"]
+  },
+  "tab-layout#products": {
+    "children": [
+      "tab-list#products",
+      "tab-content#products"
+    ]
+  },
+  // Items
+  "tab-list#products": {
+    "children": [
+      "tab-list.item#products1",
+      "tab-list.item#products2",
+      "tab-list.item#products3"
+    ]
+  },
+  "tab-list.item#products1": {
+    "props": {
+      "tabId": "descricao",
+      "label": "DESCRIÇÃO"
+    }
+  },
+
+  "tab-list.item#products2": {
+    "props": {
+      "tabId": "depoimentos",
+      "label": "DEPOIMENTOs"
+    }
+  },
+
+  "tab-list.item#products3": {
+    "props": {
+      "tabId": "duvidas",
+      "label": "DÚVIDAS"
+    }
+  },
+  "tab-content#products": {
+    "children": [
+      "tab-content.item#products1",
+      "tab-content.item#products2",
+      "tab-content.item#products3"
+    ]
+  },
+  "tab-content.item#products1": {
+    "children": [
+      "rich-text#1" 
+    ],
+    "props": {
+      "tabId": "descricao"
+    }
+  },
+  
+  "tab-content.item#products2": {
+    "children": [
+      "rich-text#2"
+    ],
+    "props": {
+      "tabId": "depoimentos"
+    }
+  },
+
+  "tab-content.item#products3": {
+    "children": [
+      "rich-text#3"
+    ],
+    "props": {
+      "tabId": "duvidas"
+    }
+  },
+  "rich-text#1": {
+    "props": {
+      "text": "Texto Descrição",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Texto Depoimentos",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "text": "Texto Dúvidas",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  }
+}

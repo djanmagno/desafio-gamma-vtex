@@ -1,0 +1,133 @@
+{
+      // Menu
+  // tab-layout
+  "tab-layout#header": {
+    "children": [
+      "tab-list#header",
+      "tab-content#header"
+    ]
+  },
+  // Items
+  "tab-list#header": {
+    "children": [
+      "tab-list.item#header1",
+      "tab-list.item#header2",
+      "tab-list.item#header3",
+      "tab-list.item#header4",
+      "tab-list.item#header5",
+      "tab-list.item#header6"
+    ]
+  },
+  "tab-list.item#header1": {
+    // "children": ["list-context.product-list#promo"],
+    "props": {
+      "tabId": "desafios",
+      "label": "DESAFIOS"
+    }
+  },
+
+  "tab-list.item#header2": {
+    "props": {
+      "tabId": "corinthians",
+      "label": "CORINTHIANS"
+    }
+  },
+  "tab-list.item#header3": {
+    "props": {
+      "tabId": "palmeiras",
+      "label": "PALMEIRAS"
+    }
+  },
+  "tab-list.item#header4": {
+    "props": {
+      "tabId": "guerreiros",
+      "label": "GUERREIROS"
+    }
+  },  
+  "tab-list.item#header5": {
+    "props": {
+      "tabId": "signos",
+      "label": "SIGNOS"
+    }
+  },
+  "tab-list.item#header6": {
+    "props": {
+      "tabId": "combo",
+      "label": "COMBOS"
+    }
+  },
+  // Contents
+  "tab-content#header": {
+    "children": [
+      "tab-content.item#header1",
+      "tab-content.item#header2",
+      "tab-content.item#header3",
+      "tab-content.item#header4",
+      "tab-content.item#header5",
+      "tab-content.item#header6"
+    ]
+  },
+  "tab-content.item#header1": {
+    "children": [
+      // "shelf"
+      "slider-layout#text-test",
+      "search-result-layout.customQuery#Desafios"
+      
+    ],
+    "props": {
+      "tabId": "desafios"
+    }
+  },
+  
+  "tab-content.item#header2": {
+    "children": [
+      "slider-layout#text-test",
+      "search-result-layout.customQuery#Corinthians"
+    ],
+    "props": {
+      "tabId": "corinthians"
+    }
+  },
+
+  "tab-content.item#header3": {
+    "children": [
+      "slider-layout#text-test",
+      "search-result-layout.customQuery#Palmeiras"
+    ],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+
+  "tab-content.item#header4": {
+    "children": [
+      "slider-layout#text-test",
+      "search-result-layout.customQuery#Guerreiros"
+    ],
+    "props": {
+      "tabId": "guerreiros"
+    }
+  },
+
+  "tab-content.item#header5": {
+    "children": [
+      "slider-layout#text-test",
+      "search-result-layout.customQuery#Signos"
+    ],
+    "props": {
+      "tabId": "signos"
+    }
+  },
+
+  "tab-content.item#header6": {
+    "children": [
+      "slider-layout#text-test",
+      "search-result-layout.customQuery#Combos"
+    ],
+    "props": {
+      "tabId": "combo"
+    }
+  }
+
+// Fim tab-layout
+}

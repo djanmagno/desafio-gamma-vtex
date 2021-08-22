@@ -1,0 +1,37 @@
+.listContainer {
+    background: #212121;
+}
+
+.listItem {
+    border: none;
+    background-color: transparent ;
+}
+
+.listItem :hover {
+    background-color: transparent ;
+}
+
+
+.listItemActive {
+    background-color: transparent ;
+    border-bottom: 2px solid #59ff00;
+}
+
+.listContainer :global(.vtex-button) {
+    border: none;
+    background-color: transparent
+}
+
+.listContainer :global(.vtex-button__label) {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: normal;
+    text-align: center;
+    text-transform: uppercase;
+} 
+
+.contentItem {
+    background-color: #303030
+}
+

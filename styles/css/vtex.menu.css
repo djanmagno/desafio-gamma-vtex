@@ -1,0 +1,35 @@
+.menuContainer {  
+    background: #212121;
+    justify-content: space-evenly;
+}
+
+
+.menuContainer :global(.vtex-menu-2-x-styledLinkContent) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.styledLinkContent {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.styledLinkContent :hover {
+    color: #59ff00;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: normal;
+    text-align: center;
+    text-transform: uppercase;
+}

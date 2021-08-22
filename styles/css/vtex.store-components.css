@@ -1,0 +1,160 @@
+.logoContainer {
+    background: #212121;
+}
+
+.searchBarContainer {
+    background: #212121;
+    width: 500px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+    background: transparent;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+    background: transparent;
+    color: #59ff00;
+}
+
+.searchBarContainer :global(.vtex-store-components-3-x-searchBarIcon--search) {
+    padding-left: 1rem;
+}
+
+.searchIcon {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.searchIcon :hover {
+    color: #59ff00;
+}
+
+.container {
+    background-color: transparent;
+}
+
+.container :global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
+    background-color: #212121;
+}
+
+.imageElement {
+    width: 912px;
+    height: 320px; 
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.priceContainer {
+    margin: none;
+    background-color: #424242;
+}
+
+.listPriceValue {
+    color: #ffffff;
+}
+
+.listPriceLabel {
+    color: #ffffff;
+}
+
+.sellingPriceLabel {
+    color: #59ff00;
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+
+.sellingPriceValue {
+    color: #59ff00;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+
+.container :global(.vtex-flex-layout-0-x-flexRow) {
+    background-color: #303030;
+} 
+
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+    height: 450px;
+    background-color: #424242;
+} 
+
+.carouselGaleryThumbs {
+    visibility: hidden; 
+}
+
+.productImageTag {
+    width: 50%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.swiperPaginationClickable {
+    position: relative;
+    margin-top: 15px;
+}
+
+.swiperBullet {
+    color: white;
+    margin-top: 15px;
+}
+
+.swiperBullet--active {
+    color: #59ff00;
+    margin-top: 15px;
+}
+
+.productsImagesGallerySwiperContainer :global(.vtex-store-components-3-x-swiperBullet) {
+    color: white;
+}
+
+.swiperCaret {
+    margin: 0 300px;
+} 
+
+.caretIcon {
+    cursor: pointer;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+}
+
+.caretIcon :hover {
+    cursor: pointer;
+    color: #59ff00;
+    height: 20px;
+    width: 20px;
+}
+
+.productNameContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    padding-left: 370px;
+    background-color: #424242;
+}
+
+.productBrand {
+    width: 100%;
+    color: white;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+.price_className {
+    /* padding-left: 308px;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

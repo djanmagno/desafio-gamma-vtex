@@ -1,0 +1,25 @@
+  
+// store/blocks/search-landing.jsonc
+{
+
+    // "search-result-layout.customQuery#Promo": {
+    //     "blocks": ["search-result-layout.desktop"],
+    //     "props": {
+    //         "querySchema": {
+    //             "orderByField": "OrderByReleaseDateDESC",
+    //             "hideUnavailableItems": true,
+    //             "maxItemsPerPage": 8,
+    //             "queryField": "UpMedal",
+    //             "mapField": "ft",
+    //             "skusFilter": "FIRST_AVAILABLE"
+    //         }
+    //     }
+    // },
+    // "search-result-layout.desktop": {
+    //     "children": ["flex-layout.col#products"]    
+    // },
+    // "flex-layout.col#products": {
+    //     "children": ["gallery"]
+    // }   
+}    
+

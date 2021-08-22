@@ -1,0 +1,156 @@
+{
+    "search-result-layout.customQuery#Desafios": {
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ],
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "desafios",
+                "mapField": "category-2",
+                "skusFilter": "FIRST_AVAILABLE"
+            }
+        }
+    },
+    "search-result-layout.customQuery#Corinthians": {
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ],
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "Corinthians",
+                "mapField": "ft",
+                "skusFilter": "FIRST_AVAILABLE"
+            }
+        }
+    },
+    "search-result-layout.customQuery#Palmeiras": {
+        "blocks": [
+          "search-result-layout.desktop",
+          "search-result-layout.mobile",
+          "search-not-found-layout"
+        ],
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "palmeiras",
+                "mapField": "ft",
+                "skusFilter": "FIRST_AVAILABLE"
+            }
+        }
+    },
+    "search-result-layout.customQuery#Guerreiros": {
+        "blocks": [
+          "search-result-layout.desktop",
+          "search-result-layout.mobile",
+          "search-not-found-layout"
+        ],
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "guerreiros",
+                "mapField": "category-3",
+                "skusFilter": "FIRST_AVAILABLE"
+            }
+        }
+    },
+    "search-result-layout.customQuery#Signos": {
+        "blocks": [
+          "search-result-layout.desktop",
+          "search-result-layout.mobile",
+          "search-not-found-layout"
+        ],
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 3,
+                "queryField": "signos",
+                "mapField": "category-3",
+                "skusFilter": "FIRST_AVAILABLE"
+            }
+        }
+    },
+    "search-result-layout.customQuery#Combos": {
+        "blocks": [
+          "search-result-layout.desktop",
+          "search-result-layout.mobile",
+          "search-not-found-layout"
+        ],
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 7,
+                "queryField": "combo",
+                "mapField": "ft",
+                "skusFilter": "FIRST_AVAILABLE"
+            }
+        }
+    },
+    
+    "search-result-layout.desktop": {
+        "children": [
+          "flex-layout.row#results"
+        ],
+        "props":{
+          "defaultGalleryLayout": "two",
+          "bookclass": "results"
+        }
+    },
+    "flex-layout.row#results": { 
+        "children": [ 
+          // "flex-layout.col#search",
+          "search-content"
+        ]
+    },
+    // "flex-layout.col#search": { 
+    //     "children": [
+    //       "search-content"
+    //     ]
+    // },
+    "search-content": { 
+        "blocks": ["gallery", "not-found"]
+    },
+    "gallery": {
+        "props": {
+          "layouts": [
+            {
+              "name": "whole",
+              "component": "OneOrTwoLineSummary",
+              "itemsPerRow": 1
+            },
+            {
+              "name": "two",
+              "component": "OneOrTwoLineSummary",
+              "itemsPerRow": 2
+            },
+            {
+              "name": "many",
+              "component": "ManyByLineSummary",
+              "itemsPerRow": {
+                "desktop": 5,
+                "mobile": 1
+              }
+            }
+          ],
+          "OneOrTwoLineSummary": "product-summary.shelf",
+          "ManyByLineSummary": "product-summary.shelf"
+        },
+        "blocks": ["product-summary.shelf"]
+    }
+
+}
